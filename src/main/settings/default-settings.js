@@ -1,0 +1,33 @@
+module.exports = Object.freeze({
+  editor: Object.freeze({ tabSize: 2, insertSpaces: true }),
+  files: Object.freeze({ autoSave: false }),
+  theme: "dark",
+  keybindings: Object.freeze({
+    "workbench.newWindow": "Ctrl+Shift+N",
+    "file.new": "Ctrl+N",
+    "file.open": "Ctrl+O",
+    "file.openFolder": "Ctrl+K Ctrl+O",
+    "file.save": "Ctrl+S",
+    "file.saveAs": "Ctrl+Shift+S",
+    "file.saveAll": "Ctrl+K S",
+    "editor.close": "Ctrl+W",
+    "editor.undo": "Ctrl+Z",
+    "editor.redo": "Ctrl+Y",
+    "editor.cut": "Ctrl+X",
+    "editor.copy": "Ctrl+C",
+    "editor.paste": "Ctrl+V",
+    "editor.triggerSuggest": "Ctrl+Space",
+    "editor.find": "Ctrl+F",
+    "editor.replace": "Ctrl+H",
+    "editor.toggleLineComment": "Ctrl+/",
+    "editor.selectAll": "Ctrl+A",
+    "editor.goToLine": "Ctrl+G",
+    "workbench.quickOpen": "Ctrl+P",
+    "editor.goToSymbol": "Ctrl+Shift+O",
+    "editor.moveLineUp": "Alt+ArrowUp",
+    "editor.moveLineDown": "Alt+ArrowDown",
+    "terminal.new": "Ctrl+Shift+`",
+    "terminal.split": "Ctrl+Shift+5",
+    "terminal.newWindow": "Ctrl+Shift+Alt+`"
+  })
+});

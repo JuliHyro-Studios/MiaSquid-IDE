@@ -1,0 +1,7 @@
+{
+  "id": "general",
+  "title": "General",
+  "settings": [
+    { "key": "theme", "title": "Color Theme", "description": "Choose the IDE color theme.", "type": "select", "options": [{ "value": "dark", "label": "Dark" }, { "value": "light", "label": "Light" }] }
+  ]
+}

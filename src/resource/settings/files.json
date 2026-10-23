@@ -1,0 +1,7 @@
+{
+  "id": "files",
+  "title": "Files",
+  "settings": [
+    { "key": "files.autoSave", "title": "Auto Save", "description": "Automatically save edited files after a short delay.", "type": "boolean" }
+  ]
+}

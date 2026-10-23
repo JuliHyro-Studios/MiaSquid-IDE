@@ -1,0 +1,113 @@
+:root{--bg:#181a1f;--panel:#202329;--border:#30343c;--muted:#9aa3b2;--text:#dce2ec;--accent:#4daafc;color-scheme:dark}
+body{background:var(--bg);color:var(--text)}
+#topbar-host,.topbar{background:#1b1d23;border-color:#30343c}
+#workspace-row{gap:0}
+#activitybar-host{background:#17191e;border-color:#2b2e36}
+#solution-host{background:#202329;border-color:#30343c}
+.sidebar-heading{height:42px;padding:0 14px 0 18px;color:#cbd2df;letter-spacing:.08em}
+.workspace-label{height:34px;color:#cbd2df;border-top:1px solid #2c3038;border-bottom:1px solid #2c3038}
+.tree-row{height:27px;color:#c9cfda}
+.tree-row:hover,.tree-row.selected{background:#2d3542}
+.subtle-button,.icon-button{border-radius:5px;color:#aeb8c8}
+.subtle-button:hover,.icon-button:hover,.activity-button:hover{background:#2a303a}
+.activity-button{margin:0 3px;border-left-width:2px;border-radius:0 5px 5px 0}
+.activity-button.active{color:#eef4ff;border-left-color:var(--accent);background:#232831}
+.editor-tabs{height:38px;flex-basis:38px;background:#202329;border-color:#30343c}
+.editor-tab{min-width:130px;padding:0 11px;background:#202329;border-right:1px solid #30343c;color:#abb4c2}
+.editor-tab.active{background:#181a1f;color:#edf3fc;border-top-color:var(--accent)}
+.tab-close{width:21px;height:21px;border-radius:4px;color:#aeb8c8}
+.tab-close:hover{background:#3b414c}
+.dock-leaf-header,.dock-leaf-tab{background:#202329;border-color:#30343c}
+.dock-leaf-tab{height:34px;padding:0 14px;color:#9ea8b8}
+.dock-leaf-tab.active{background:#181a1f;border-top-color:var(--accent);color:#e3eaf5}
+.dock-splitter{background:#282c34}
+.dock-splitter:hover,.dock-splitter.dragging{background:var(--accent)}
+.context-menu{min-width:270px;padding:5px;background:#252932;border:1px solid #3b414c;border-radius:7px;box-shadow:0 14px 36px #0008}
+.menu-item{min-height:31px;padding:5px 10px;border-radius:4px;color:#d7deea}
+.menu-item:hover{background:#343d4b}
+.menu-item:disabled{opacity:.42;cursor:not-allowed}
+.menu-divider{background:#3a404b}
+.empty-actions button,.welcome-action{border-color:#3a414d;background:#242831;border-radius:6px}
+.empty-actions button:hover,.welcome-action:hover{background:#2c3440;border-color:#4b5869}
+.editor-content{position:relative;background:#181a1f}
+.editor-gutter{flex-basis:58px;padding-right:14px;color:#727d8e}
+.editor-highlight,.editor-textarea{padding-top:17px;padding-bottom:20px;font:13px/1.65 "Cascadia Code",Consolas,monospace}
+.editor-textarea{caret-color:#f5f7fa}
+.editor-gutter-line{height:21.45px;line-height:21.45px}
+.editor-gutter-line.error{color:#f48771}
+.editor-gutter-line.warning{color:#e8c36a}
+.editor-inline-diagnostic{position:absolute;z-index:3;left:64px;bottom:10px;max-width:min(720px,80%);overflow:hidden;padding:6px 10px;background:#352629eF;border:1px solid #71444b;border-radius:5px;color:#ffd2d7;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
+.editor-completions{border-color:#465061;border-radius:6px}
+.completion-item{padding:6px 9px;border-radius:4px}
+.bottom-panel{background:#1c1f25}
+.bottom-tabs{border-color:#30343c}
+.bottom-tab{padding:0 13px}
+.bottom-tab.active{border-bottom-color:var(--accent);color:#e5edf8}
+.diagnostic-item{display:block;width:100%;padding:4px 8px;text-align:left;color:#d1d8e3;font:12px/1.5 "Segoe UI",sans-serif}
+.diagnostic-item:hover{background:#2e343e}
+.diagnostic-item.error{color:#f5a2a2}
+.diagnostic-item.warning{color:#e8c36a}
+.statusbar{background:#245b83;font-size:11px}
+.statusbar button{height:22px;padding:2px 7px}
+.statusbar button:hover{background:#ffffff20}
+.git-heading{align-items:center;padding:12px 14px;color:#cbd2df}
+.git-controls{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px 12px}
+.git-controls button,.git-add-remote{min-height:29px;padding:5px 9px;border:1px solid #3b414c;border-radius:5px;text-align:center;color:#cfd7e4}
+.git-controls button:hover,.git-add-remote:hover{background:#2d3542}
+.git-controls [data-action=git-init]{grid-column:1/-1;background:#175e89}
+.git-remotes{padding:0 10px}
+.git-remote{display:flex;align-items:center;gap:6px;padding:6px 4px;color:#aab5c5;font-size:11px}
+.git-remote span{flex:1;overflow-wrap:anywhere}
+.git-remote button{padding:1px 6px;border-radius:4px}
+.git-config-summary{padding:8px 12px;color:#8f9aab;font-size:11px;overflow-wrap:anywhere}
+.git-add-remote{width:calc(100% - 24px);margin:5px 12px}
+.git-commit-label input,.dialog-card input,.settings-card select{border:1px solid #434b58;border-radius:4px;background:#191c22;color:#e0e6f0}
+.git-commit-button{min-height:30px;border-radius:5px}
+.notification-panel,.dialog-card,.settings-card{background:#242831;border-color:#424957;border-radius:8px}
+.notification-card{background:#2c323c;border-radius:5px}
+.notification-actions button,.dialog-actions button,.settings-card footer button{border-radius:5px}
+.dialog-card input{min-height:34px}
+.dialog-actions button.primary{background:#1976b9}
+.settings-overlay{position:fixed;inset:0;z-index:1350;display:grid;place-items:center;background:#090b10aa}
+.settings-card{display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:0;width:min(1040px,calc(100vw - 48px));height:min(760px,calc(100vh - 48px));padding:0;border:1px solid #454d5c;box-shadow:0 18px 56px #0009;overflow:hidden}
+.settings-header,.settings-card footer{display:flex;align-items:center;gap:12px;padding:12px 18px;border-bottom:1px solid #343a45}
+.settings-card footer{justify-content:flex-end;border-top:1px solid #343a45;border-bottom:0}
+.settings-card h2{margin:0;font-size:16px;font-weight:550}
+.settings-header input{flex:1;max-width:480px;margin-left:auto;padding:7px 10px;border:1px solid #434b58;border-radius:4px;background:#191c22;color:#e0e6f0}
+.settings-card header button{font-size:20px;color:#abb5c4}
+.settings-layout{display:grid;grid-template-columns:230px minmax(0,1fr);min-height:0}
+.settings-tree{padding:14px 8px;overflow:auto;border-right:1px solid #343a45}
+.settings-tree-category{padding:8px 10px 4px;color:#9da8b8;font-size:11px;font-weight:650;text-transform:uppercase}
+.settings-tree-item{display:block;width:100%;padding:7px 10px;text-align:left;border:0;border-radius:4px;background:transparent;color:#cbd3df}
+.settings-tree-item:hover,.settings-tree-item.active{background:#343b47;color:#fff}
+.settings-content{padding:22px 28px;overflow:auto}
+.settings-breadcrumb{color:#9da8b8;font-size:12px}
+.settings-content h3{margin:8px 0 18px;font-size:22px;font-weight:550}
+.settings-markdown{color:#abb5c4;font-size:13px}
+.settings-markdown h4{margin:10px 0;color:#e0e6f0}
+.settings-markdown p{margin:6px 0 12px}
+.settings-markdown ul{padding-left:22px}
+.settings-markdown pre{padding:10px;background:#191c22;border-radius:4px;white-space:pre-wrap}
+.settings-page-controls,.settings-keybindings{margin-top:22px}
+.settings-setting{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0;border-top:1px solid #343a45;color:#cbd3df}
+.settings-setting-copy{display:grid;gap:4px}
+.settings-setting-copy strong{font-size:13px;font-weight:500}
+.settings-setting-copy small{color:#9da8b8;font-size:11px}
+.settings-setting select,.settings-keybinding input{min-width:140px;padding:6px 8px;border:1px solid #434b58;border-radius:4px;background:#191c22;color:#e0e6f0}
+.settings-keybinding input{text-align:center}
+.settings-storage-path{margin-top:28px;color:#8f9aab;font-size:11px;overflow-wrap:anywhere}
+.settings-card input[type=checkbox]{accent-color:var(--accent)}
+.settings-card footer button{padding:7px 12px;border:1px solid #454d5c}
+.settings-card footer button:last-child{background:#176da7;border-color:#176da7}
+@media(max-width:700px){.settings-card{width:calc(100vw - 20px);height:calc(100vh - 20px)}.settings-layout{grid-template-columns:150px minmax(0,1fr)}.settings-content{padding:16px}.settings-setting{align-items:flex-start;flex-direction:column;gap:8px}}
+body[data-theme=light]{color-scheme:light;--bg:#f3f5f8;--panel:#fff;--border:#d8dde5;--text:#222936;--muted:#667080;--accent:#0067b8;background:#f3f5f8;color:#222936}
+body[data-theme=light] #topbar-host,body[data-theme=light] .topbar,body[data-theme=light] #solution-host,body[data-theme=light] .editor-tabs,body[data-theme=light] .dock-leaf-header,body[data-theme=light] .dock-leaf-tab,body[data-theme=light] .bottom-panel{background:#fff;color:#283241}
+body[data-theme=light] #activitybar-host{background:#e8ebf0}
+body[data-theme=light] .editor-content,body[data-theme=light] .editor-workspace,body[data-theme=light] .editor-highlight{background:#fff}
+body[data-theme=light] .editor-highlight code{color:#252a33}
+body[data-theme=light] .editor-textarea{color:transparent}
+body[data-theme=light] .tree-row:hover,body[data-theme=light] .tree-row.selected{background:#e4eaf2}
+body[data-theme=light] .context-menu,body[data-theme=light] .notification-panel,body[data-theme=light] .dialog-card,body[data-theme=light] .settings-card{background:#fff;color:#222936;border-color:#cbd2dc}
+body[data-theme=light] .menu-item{color:#283241}
+body[data-theme=light] .menu-item:hover{background:#edf1f6}
+body[data-theme=light] .settings-card label,body[data-theme=light] .git-branch{color:#394456}

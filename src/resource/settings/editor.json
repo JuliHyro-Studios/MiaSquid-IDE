@@ -1,0 +1,8 @@
+{
+  "id": "editor",
+  "title": "Text Editor",
+  "settings": [
+    { "key": "editor.tabSize", "title": "Tab Size", "description": "The number of spaces inserted when you press Tab.", "type": "select", "options": [{ "value": 2, "label": "2" }, { "value": 4, "label": "4" }, { "value": 8, "label": "8" }] },
+    { "key": "editor.insertSpaces", "title": "Insert Spaces", "description": "Insert spaces when pressing Tab instead of a tab character.", "type": "boolean" }
+  ]
+}

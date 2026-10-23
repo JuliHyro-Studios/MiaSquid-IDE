@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' file:; script-src 'self' file:; style-src 'self' 'unsafe-inline' file:; img-src 'self' data:">
+<title>MiaSquid IDE</title>
+<link rel="stylesheet" href="../css/shell.css"><link rel="stylesheet" href="../css/topbar.css"><link rel="stylesheet" href="../css/toolbar.css"><link rel="stylesheet" href="../css/solution.css"><link rel="stylesheet" href="../css/docking.css">
+<link rel="stylesheet" href="../css/terminal.css">
+<link rel="stylesheet" href="../css/features.css">
+<link rel="stylesheet" href="../css/modern.css">
+<link rel="stylesheet" href="../../../node_modules/@xterm/xterm/css/xterm.css">
+<link rel="stylesheet" href="../../../node_modules/@highlightjs/cdn-assets/styles/vs2015.min.css">
+</head><body><div id="app-shell">
+<header id="topbar-host" data-layout-locked="true"></header>
+<div id="workspace-row"><div id="activitybar-host" class="component-host"></div>
+<aside id="solution-host" class="component-host"></aside>
+<main id="center-workspace"><div id="toolbar-host" class="component-host"></div><section id="editor-host" class="component-host"></section><section id="bottom-panel-host" class="component-host"></section></main></div>
+<footer id="statusbar-host" class="component-host"></footer></div>
+<div id="file-menu" class="context-menu" role="menu" hidden></div>
+<div id="edit-menu" class="context-menu" role="menu" hidden></div>
+<div id="selection-menu" class="context-menu" role="menu" hidden></div>
+<div id="go-menu" class="context-menu" role="menu" hidden></div>
+<div id="explorer-context-menu" class="context-menu" role="menu" hidden></div>
+<div id="view-menu" class="context-menu" role="menu" hidden></div>
+<div id="appearance-menu" class="context-menu submenu" role="menu" hidden></div>
+<div id="terminal-menu" class="context-menu" role="menu" hidden></div>
+<section id="notification-panel" class="notification-panel" hidden aria-live="polite"></section>
+<section id="dialog-overlay" class="dialog-overlay" hidden>
+  <form id="dialog-form" class="dialog-card">
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-message"></p>
+    <label id="dialog-label"><span></span><input id="dialog-input" autocomplete="off"></label>
+    <div id="dialog-actions" class="dialog-actions"></div>
+  </form>
+</section>
+<section id="settings-overlay" class="settings-overlay" hidden>
+  <div class="settings-card" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+    <header class="settings-header"><h2 id="settings-title">Settings</h2><input id="settings-search" type="search" placeholder="Search settings" aria-label="Search settings"><button type="button" id="settings-close" aria-label="Close Settings">×</button></header>
+    <div class="settings-layout">
+      <nav id="settings-tree" class="settings-tree" aria-label="Settings categories"></nav>
+      <main class="settings-content">
+        <div id="settings-breadcrumb" class="settings-breadcrumb"></div>
+        <h3 id="settings-page-title"></h3>
+        <div id="settings-page-description" class="settings-markdown"></div>
+        <div id="settings-page-controls" class="settings-page-controls"></div>
+        <div id="settings-keybindings" class="settings-keybindings" hidden></div>
+        <p id="settings-storage-path" class="settings-storage-path"></p>
+      </main>
+    </div>
+    <footer><button type="button" id="settings-done">Done</button></footer>
+  </div>
+</section>
+<div id="drop-overlay"></div>
+<script src="../../../node_modules/@xterm/xterm/lib/xterm.js"></script>
+<script src="../../../node_modules/@xterm/addon-fit/lib/addon-fit.js"></script>
+<script src="../../../node_modules/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="../../../node_modules/acorn/dist/acorn.js"></script>
+<script src="../../main/terminal/terminal-view.js"></script>
+<script type="module" src="../../main/shell/shell.js"></script></body></html>

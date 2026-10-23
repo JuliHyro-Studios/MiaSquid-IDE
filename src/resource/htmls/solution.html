@@ -1,0 +1,33 @@
+<div class="sidebar-heading">
+  <span>EXPLORER</span>
+  <div class="explorer-actions">
+    <button class="subtle-button" data-action="new-file" title="Create New File">＋</button>
+    <button class="subtle-button" data-action="new-folder" title="Create New Folder">📁</button>
+    <button class="subtle-button" data-action="open-folder" title="Open Folder">▣</button>
+  </div>
+</div>
+<div class="workspace-label"><span id="workspace-name">NO FOLDER OPEN</span></div>
+<div class="file-tree" id="file-tree"></div>
+<section class="git-panel" id="git-panel" hidden>
+  <div class="git-heading"><strong>REPOSITORY</strong><button data-action="git-refresh" title="Refresh Git status">↻</button></div>
+  <div class="git-branch" id="git-branch"></div>
+  <div class="git-controls">
+    <button data-action="git-init" id="git-init">Initialize Repository</button>
+    <button data-action="git-pull" id="git-pull">Pull</button>
+    <button data-action="git-push" id="git-push">Push</button>
+    <button data-action="git-config" id="git-config">Git Configuration</button>
+  </div>
+  <div id="git-remotes" class="git-remotes"></div>
+  <button class="git-add-remote" id="git-add-remote" data-action="git-add-remote">Add / Change Remote...</button>
+  <div class="git-config-summary" id="git-config-summary"></div>
+  <div class="git-heading"><strong>CHANGES</strong><span id="git-changes-count">0</span></div>
+  <label class="git-commit-label">Commit message<input id="git-commit-message" maxlength="500"></label>
+  <button class="git-commit-button" id="git-stage-all" data-action="git-stage-all">Stage All Changes</button>
+  <button class="git-commit-button" id="git-commit" data-action="git-commit">Commit Staged</button>
+  <div id="git-changes"></div>
+</section>
+<div class="explorer-footer">
+  <button class="footer-section" data-action="toggle-outline">⌄ OUTLINE</button>
+  <div id="outline-content" class="outline-content">Open a file to see its symbols.</div>
+  <button class="footer-section">⌄ TIMELINE</button>
+</div>

@@ -1,0 +1,9 @@
+{
+  "categories": [
+    { "title": "Commonly Used", "pages": ["general"] },
+    { "title": "Text Editor", "pages": ["editor"] },
+    { "title": "Files", "pages": ["files"] },
+    { "title": "Features", "pages": ["cache"] },
+    { "title": "Keyboard Shortcuts", "pages": ["keybindings"] }
+  ]
+}
