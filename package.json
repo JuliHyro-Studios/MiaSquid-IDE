@@ -1,0 +1,25 @@
+{
+  "name": "miasquid-ide",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "IDE",
+    "code",
+    "program"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "MiaSquid-IDE"
+  },
+  "license": "Apache-2.0",
+  "author": "JuliHyro-Studios",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^45.0.0"
+  }
+}
