@@ -1,0 +1,13 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Electron: npm run start (CMD)",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cmd.exe /d /c npm.cmd run start",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
